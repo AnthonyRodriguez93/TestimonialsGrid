@@ -57,6 +57,14 @@ img {
 }
 
 
+.card-status {
+    color: hsla(0, 0%, 81%, 50%);
+} 
+
+.card-text  {
+    color: hsla(0, 0%, 81%, 70%);
+}
+
 
 
 /* INDIVIDUAL CARDS  */
@@ -95,6 +103,7 @@ img {
 /* JOHNNY CARD  */
 .card.johnny-card {
     grid-area: 1/3/1/4;
+    background-color: hsl(217, 19%, 35%);
 }
 
 /* JEAN CARD  */
@@ -105,6 +114,7 @@ img {
 /* PATTY CARD  */
 .card.patty-card {
     grid-area: 2/2/2/4;
+    background-color: hsl(219, 29%, 14%);
 }
 
 /* KIRA CARD  */
