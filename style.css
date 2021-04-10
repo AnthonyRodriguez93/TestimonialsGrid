@@ -1,0 +1,124 @@
+html, body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 46%, 95%);
+    line-height: 1.3;
+    font-size: 13px;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 40px;
+    border: 2px solid;
+    float: left;
+}
+
+
+/* FLEX CONTAINER  */
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* GRID CONTAINER  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding: 3%;
+    column-gap: 2.5%;
+    row-gap: 2.5%;
+}
+
+/* CARDS  */
+.card {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    border-radius: 8px;
+    padding: 10% 8%;
+    box-shadow: 0 0 3px RGB(202,217,234);
+    
+}
+
+.card-header h5 {
+    margin: 0;
+    padding: 4px 0px 4px 20px;
+
+}
+.card-header {
+    margin: 0;
+}
+
+.card.card-blurb {
+    margin: 6%, 0, 0, 0;
+}
+
+
+
+
+/* INDIVIDUAL CARDS  */
+/* DANNY CARD  */
+.card.danny-card {
+    grid-area: 1/1/1/3;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 13%;
+}
+
+.card.danny-card .card-name {
+    color: rgb(252, 224, 255);
+
+}
+
+.card.danny-card.card .card-status {
+    color: rgb(252, 224, 255, 0.5);
+}
+
+.card.danny-card .card-blurb {
+    margin: 0;
+    color: rgb(255, 246, 255);
+
+}
+
+.card.danny-card .card-text {
+    color: rgb(255, 246, 255, .6);
+}
+
+.card.danny-card img {
+    border-color: white;
+}
+
+/* JOHNNY CARD  */
+.card.johnny-card {
+    grid-area: 1/3/1/4;
+}
+
+/* JEAN CARD  */
+.card.jean-card {
+    grid-area: 2/1/2/2;
+}
+
+/* PATTY CARD  */
+.card.patty-card {
+    grid-area: 2/2/2/4;
+}
+
+/* KIRA CARD  */
+.card.kira-card {
+    grid-area: 1/4/3/5;
+}
+
+
+/* FOOTER  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
