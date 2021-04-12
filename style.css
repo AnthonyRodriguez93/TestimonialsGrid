@@ -199,6 +199,7 @@ img {
 .attribution {
     font-size: 11px;
     text-align: center;
+    
   }
 
   .attribution a {
@@ -206,15 +207,15 @@ img {
   }
 
 
-
-
-
-
 /* MEDIA QUERIES  */
 @media only screen and (max-width: 900px) {
-.section {
-    flex-direction: row;
-}
+    .section {
+        flex-direction: row;
+    }
+
+    .attribution {
+        margin-top: 15%;
+    }
 
    .card.danny-card{
        grid-area:  1/5/1/1;
