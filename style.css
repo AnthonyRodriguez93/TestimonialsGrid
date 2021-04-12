@@ -22,6 +22,7 @@ img {
     flex-direction: column;
 }
 
+
 /* GRID CONTAINER  */
 .grid-container {
     display: grid;
@@ -32,6 +33,8 @@ img {
     column-gap: 2.5%;
     row-gap: 2.5%;
 }
+
+
 
 /* CARDS  */
 .card {
@@ -45,11 +48,16 @@ img {
 
 .card-header h5 {
     margin: 0;
-    padding: 4px 0px 4px 20px;
-
+    padding: 4px 0px 4px 60px;
+    font-size: 1rem;
 }
-.card-header {
-    margin: 0;
+
+.card-name {
+    margin-left: 12%;
+}
+
+.card-status {
+    margin-left: 12%;
 }
 
 .card.card-blurb {
@@ -63,7 +71,11 @@ img {
 
 .card-text  {
     color: hsla(0, 0%, 81%, 70%);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
 }
+
 
 
 
@@ -100,11 +112,12 @@ img {
     border-color: rgba(252, 224, 255, 50%);
 }
 
+
+
 /* JOHNNY CARD  */
 .johnny-card {
     color: hsl(210, 46%, 95%);
 }
-
 
 .card.johnny-card {
     grid-area: 1/3/1/4;
@@ -140,6 +153,8 @@ img {
 .jean-card img {
     border-color: white;
 }
+
+
 /* PATTY CARD  */
 .card.patty-card {
     grid-area: 2/2/2/4;
@@ -153,6 +168,8 @@ img {
 .patty-card { 
     color: hsl(210, 46%, 95%);
 }
+
+
 
 /* KIRA CARD  */
 .card.kira-card {
@@ -176,6 +193,8 @@ img {
 }
 
 
+
+
 /* FOOTER  */
 .attribution {
     font-size: 11px;
@@ -187,14 +206,32 @@ img {
   }
 
 
-/* @media only screen and (max-width: 900px) {
+
+
+
+
+/* MEDIA QUERIES  */
+@media only screen and (max-width: 900px) {
 .section {
     flex-direction: row;
 }
 
    .card.danny-card{
-       grid-area:  1/1/1/span 1;
+       grid-area:  1/5/1/1;
    }
    
-   
-} */
+   .card.johnny-card {
+        grid-area: 2/1/3/5;
+    }
+
+    .card.jean-card {
+        grid-area: 3/1/3/5;
+    }
+
+    .card.patty-card {
+        grid-area: 4/1/4/5;
+    }
+    .card.kira-card {
+        grid-area: 5/1/5/5;
+    }
+}
